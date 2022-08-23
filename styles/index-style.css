@@ -1,7 +1,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin-top: 4vw;
-    max-width: 100%;
+    width: 90%;
+    margin-left: 4vw;
+    margin-right: 5vw;
 }
 
 /* -------------------------------
@@ -9,17 +11,14 @@ CSS Styles for the Header Section
 -----------------------------------*/
 
 .top-container {
-    display: flex;
     background-color: black;
-    width: 90%;
     border-radius: 2.6vw;
     margin: auto;
     padding-top: 2vw;
     padding-bottom: 4vw;
-}
 
-.header-half {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .header-text {
@@ -191,46 +190,38 @@ footer hr {
     grid-column-gap: 5.208vw;
 }
 
-/* Media Query for mobile devices */
+
+/* -----------------------------------
+    Media Query for mobile devices 
+    --------------------------------*/
 @media only screen and (max-width: 576px) {
 
     .top-container {
-        flex-direction: column;
-        width: 95vw;
-        border-radius: 2.6vw;
-        margin-bottom: 6.95vw;
-        margin-left: 7.5%;
-        padding-top: 3.47vw;
-        padding-bottom: 10.41vw;
-    }
-
-    .header-half {
-        width: 100%;
-    }
-
-    .header-text {
-        padding-left: 8.68vw;
-
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 
     .header-text h1 {
-        font-size: 6.94vw;
+        font-size: 8vw;
+        font-weight: 700;
+        color: white;
     }
 
     .header-text p {
-        font-size: 2.60vw;
-        padding-bottom: 3.47vw;
+        font-size: 5vw;
+        font-weight: 700;
+        color: white;
+        padding-bottom: 2vw;
     }
 
     .header-text a {
-        width: 8.68vw;
-        height: 6.94vw;
-        padding: 0.86vw 3.47vw;
-        border-radius: 0.87vw;
+        text-decoration: none;
+        background-color: red;
+        padding: 2vw 2vw;
+        color: white;
+        font-weight: 700;
+        font-size: 2vw;
+        border-radius: 2vw;
     }
 
-    .header-img {
-        padding-left: 8.64vw;
-        padding-top: 8.64vw;
-    }
 }
