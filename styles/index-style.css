@@ -50,11 +50,14 @@ CSS Styles for the Header Section
 }
 
 .header-img {
-    padding-left: 4vw;
+    padding-left: 1vw;
     padding-top: 2vw;
     padding-right: 4vw;
-    height: 100%;
-    width: auto;
+}
+
+.header-img img {
+    width: 100%;
+
 }
 
 /* -------------------------------------
@@ -227,17 +230,18 @@ footer hr {
 
     .top-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1.3fr 0.7fr;
     }
 
     .header-text h1 {
         font-size: 8vw;
         font-weight: 700;
         color: white;
+        padding-right: 0.5vw;
     }
 
     .header-text p {
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: 700;
         color: white;
         padding-bottom: 2vw;
