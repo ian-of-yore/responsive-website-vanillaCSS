@@ -2,7 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin-top: 4vw;
     width: 90%;
-    margin-left: 4vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
     margin-right: 5vw;
 }
 
@@ -280,7 +281,7 @@ footer hr {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 300vw;
         grid-row-gap: 28vw;
-        margin-bottom: 220vw;
+        margin-bottom: 250vw;
     }
 
     .aside {
@@ -324,14 +325,34 @@ footer hr {
     .marca-news {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        grid-row-gap: 60vw;
+        grid-row-gap: 5vw;
     }
 
     .news {
         box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
         border: 0.347vw solid black;
         border-radius: 0.87vw;
-        height: 25vw;
+        height: 85vw;
+    }
+
+    .news-text {
+        padding-bottom: 0.5vw;
+        padding-left: 3vw;
+        padding-right: 1vw;
+        font-size: 3vw;
+    }
+
+    .news-type {
+        border: 1px solid grey;
+        font-size: 3.5vw;
+        width: 35%;
+        margin: auto;
+        border-radius: 0.86vw;
+        text-align: center;
+    }
+
+    .news-comments {
+        padding-right: 3vw;
     }
 
     /* Responsiveness for Mobile Devices of the Footer Section */
@@ -359,6 +380,8 @@ footer hr {
         font-size: 3vw;
     }
 
-
-
+    .footer-socials {
+        display: flex;
+        justify-content: space-around;
+    }
 }
