@@ -230,24 +230,37 @@ footer hr {
 
     .top-container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1.3fr 0.7fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header-text {
+        padding-right: 5vw;
     }
 
     .header-text h1 {
-        font-size: 8vw;
+        text-align: center;
+        font-size: 7vw;
         font-weight: 700;
         color: white;
         padding-right: 0.5vw;
     }
 
     .header-text p {
-        font-size: 4vw;
+        text-align: center;
+        font-size: 3vw;
         font-weight: 700;
         color: white;
         padding-bottom: 2vw;
     }
 
+    #btn-header {
+        display: flex;
+        width: 25%;
+        margin: auto;
+    }
+
     .header-text a {
+        text-align: center;
         text-decoration: none;
         background-color: red;
         padding: 2vw 2vw;
@@ -256,5 +269,96 @@ footer hr {
         font-size: 2vw;
         border-radius: 2vw;
     }
+
+    .header-img {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Responsiveness for Mobile Devices of the Second Section */
+    .second-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 300vw;
+        grid-row-gap: 28vw;
+        margin-bottom: 220vw;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        background-color: white;
+    }
+
+    .upcoming-matches,
+    .el-classico {
+        font-weight: 700;
+        font-size: 4vw;
+        text-align: center;
+        background-color: white;
+        color: black;
+        width: 60vw;
+        padding-top: 2.5vw;
+        padding-bottom: 1.5vw;
+        border: 0.347vw solid black;
+    }
+
+    .ucl-button {
+        text-decoration: none;
+        color: black;
+    }
+
+    .ucl {
+        text-align: center;
+        background-color: rgb(213, 49, 49);
+        color: black;
+        width: 60vw;
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 2.5vw;
+        padding-bottom: 1.5vw;
+        border: 0.347vw solid black;
+    }
+
+    .marca-news {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-row-gap: 60vw;
+    }
+
+    .news {
+        box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
+        border: 0.347vw solid black;
+        border-radius: 0.87vw;
+        height: 25vw;
+    }
+
+    /* Responsiveness for Mobile Devices of the Footer Section */
+    footer {
+        height: 90vw;
+        background-color: rgb(38, 37, 37);
+        padding-bottom: 3vw;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    footer h1 {
+        text-align: center;
+        font-size: 3.5vw;
+
+    }
+
+    .footer-contents {
+        color: white;
+        font-size: 3vw;
+    }
+
+
 
 }
