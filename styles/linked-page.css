@@ -1,7 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
-    max-width: 100%;
+    margin-top: 4vw;
+    width: 90%;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 /* -------------------------------
@@ -9,56 +12,53 @@ CSS Styles for the Header Section
 -----------------------------------*/
 
 .top-container {
-    display: flex;
     background-color: black;
-    width: 1050px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    margin-left: 7.5%;
-    padding-top: 20px;
-    padding-bottom: 60px;
+    border-radius: 2.6vw;
+    margin: auto;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 
-}
-
-.header-half {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .header-text {
-    padding-left: 50px;
+    padding-left: 5vw;
 
 }
 
 .header-text h1 {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 700;
     color: white;
 }
 
 .header-text p {
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: 700;
     color: white;
-    padding-bottom: 20px;
-    text-align: left;
+    padding-bottom: 2vw;
 }
 
 .header-text a {
     text-decoration: none;
-    width: 50px;
-    height: 40px;
     background-color: red;
-    padding: 5px 20px;
+    padding: 0.87vw .8vw;
     color: white;
     font-weight: 700;
-    font-size: larger;
-    border-radius: 5px;
+    font-size: .8vw;
+    border-radius: 0.86vw;
 }
 
 .header-img {
-    padding-left: 50px;
-    padding-top: 50px;
-    width: auto;
+    padding-left: 1vw;
+    padding-top: 2vw;
+    padding-right: 4vw;
+}
+
+.header-img img {
+    width: 100%;
+
 }
 
 
@@ -159,13 +159,13 @@ p {
 footer {
     background-color: black;
     color: white;
-    height: 250px;
+    height: 25vw;
 }
 
 footer h1 {
     text-align: center;
-    font-size: 40px;
-    padding-top: 50px;
+    font-size: 2vw;
+    padding-top: 6vw;
 }
 
 footer hr {
@@ -176,9 +176,27 @@ footer hr {
     font-size: small;
 }
 
-.footer-container {
+.footer-info {
     display: grid;
     grid-template-columns: repeat(6, auto);
     justify-content: center;
-    grid-column-gap: 30px;
+    grid-column-gap: 5.208vw;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1vw;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    background-color: skyblue;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: black;
+    font-weight: 700;
+    font-size: 2vw;
+    border-radius: 0.56vw;
 }
