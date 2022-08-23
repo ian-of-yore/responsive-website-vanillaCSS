@@ -67,14 +67,14 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 17vw auto;
+    grid-template-columns: 350px auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
 
 
 .aside {
-    width: 15vw;
+    width: 20vw;
     height: 15vw;
     background-color: black;
     border-radius: 0.87vw;
@@ -87,11 +87,12 @@ CSS Styles for the Header Section
     text-align: center;
     background-color: white;
     color: black;
-    width: 12vw;
+    width: 15vw;
     padding: .5vw;
     border-radius: 0.87vw;
     margin-bottom: 1.5vw;
     margin-left: 1.5vw;
+    padding-left: 2.5vw;
 }
 
 .ucl-button {
@@ -104,10 +105,11 @@ CSS Styles for the Header Section
     padding: .5vw;
     background-color: rgb(213, 49, 49);
     color: black;
-    width: 12vw;
+    width: 15vw;
     border-radius: 0.87vw;
     margin-bottom: 1.5vw;
     margin-left: 1.5vw;
+    padding-left: 2.5vw;
 }
 
 /* --------------------
@@ -204,12 +206,9 @@ footer hr {
 }
 
 .footer-socials {
-    padding-top: 2vw;
-    width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1vw;
 
 }
 
