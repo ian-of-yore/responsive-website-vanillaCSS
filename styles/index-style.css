@@ -63,18 +63,15 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 46.875vw auto;
-    width: 90%;
+    grid-template-columns: 17vw auto;
     margin-top: 5vw;
-    margin-left: 4vw;
     margin-bottom: 5vw;
-    margin-right: 4vw;
 }
 
 
 .aside {
-    width: 43.40vw;
-    height: 26.041vw;
+    width: 15vw;
+    height: 15vw;
     background-color: black;
     border-radius: 0.87vw;
     padding-top: 6.94vw;
@@ -85,10 +82,10 @@ CSS Styles for the Header Section
     text-align: center;
     background-color: white;
     color: black;
-    width: 31.25vw;
+    width: 12vw;
     border-radius: 0.87vw;
-    margin-bottom: 3.47vw;
-    margin-left: 5.56vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1.5vw;
 }
 
 .ucl-button {
@@ -100,56 +97,64 @@ CSS Styles for the Header Section
     text-align: center;
     background-color: rgb(213, 49, 49);
     color: black;
-    width: 31.25vw;
+    width: 12vw;
     border-radius: 0.87vw;
-    margin-bottom: 3.47vw;
-    margin-left: 5.56vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1.5vw;
 }
 
 /* --------------------
     Marca-News Styles 
 -----------------------*/
 
-
+.news {
+    display: flex;
+    flex-direction: column;
+}
 
 .news .carvahal img {
-    width: 43.40vw;
-    height: 30.38vw;
+    width: 100%;
+    margin-bottom: 1vw;
 }
 
 .news {
     box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
     border: 0.347vw solid black;
     border-radius: 0.87vw;
+    height: 25vw;
 }
 
 .news-text {
-    padding-bottom: 1.74vw;
-    padding-left: 1.74vw;
+    padding-bottom: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 .news-type {
     border: 1px solid grey;
     font-size: small;
-    width: 20.83vw;
-    padding-left: 1.736vw;
+    width: 12vw;
+    width: 50%;
+    margin: auto;
     border-radius: 0.86vw;
+    text-align: center;
 }
 
 .news-info {
     display: grid;
-    grid-template-columns: repeat(2, 15.625vw);
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 2vw;
 }
 
 .fa-clock.clock {
-    width: 20px;
-    height: 20px;
+    width: 1vw;
+    height: 1vw;
     opacity: 0.25;
 }
 
 .fa-comment-dots {
-    width: 3.47vw;
-    height: 3.47vw;
+    width: 1.5vw;
+    height: 1.5vw;
     opacity: 0.25;
 }
 
@@ -166,13 +171,13 @@ CSS Styles for the Header Section
 footer {
     background-color: black;
     color: white;
-    height: 43.40vw;
+    height: 20vw;
 }
 
 footer h1 {
     text-align: center;
-    font-size: 6.94vw;
-    padding-top: 8.68vw;
+    font-size: 4vw;
+    padding-top: 4vw;
 }
 
 footer hr {
