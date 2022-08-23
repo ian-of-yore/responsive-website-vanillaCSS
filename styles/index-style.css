@@ -74,7 +74,8 @@ CSS Styles for the Header Section
     height: 15vw;
     background-color: black;
     border-radius: 0.87vw;
-    padding-top: 6.94vw;
+    padding-top: 5vw;
+    padding-right: 1vw;
 }
 
 .upcoming-matches,
@@ -83,6 +84,7 @@ CSS Styles for the Header Section
     background-color: white;
     color: black;
     width: 12vw;
+    padding: .5vw;
     border-radius: 0.87vw;
     margin-bottom: 1.5vw;
     margin-left: 1.5vw;
@@ -95,6 +97,7 @@ CSS Styles for the Header Section
 
 .ucl {
     text-align: center;
+    padding: .5vw;
     background-color: rgb(213, 49, 49);
     color: black;
     width: 12vw;
@@ -112,7 +115,7 @@ CSS Styles for the Header Section
     flex-direction: column;
 }
 
-.news .carvahal img {
+.news .player img {
     width: 100%;
     margin-bottom: 1vw;
 }
@@ -131,6 +134,7 @@ CSS Styles for the Header Section
 }
 
 .news-type {
+    background-color: skyblue;
     border: 1px solid grey;
     font-size: small;
     width: 12vw;
@@ -149,13 +153,13 @@ CSS Styles for the Header Section
 .fa-clock.clock {
     width: 1vw;
     height: 1vw;
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
 .fa-comment-dots {
     width: 1.5vw;
     height: 1.5vw;
-    opacity: 0.25;
+    opacity: 0.75;
 }
 
 .marca-news {
@@ -171,13 +175,13 @@ CSS Styles for the Header Section
 footer {
     background-color: black;
     color: white;
-    height: 20vw;
+    height: 25vw;
 }
 
 footer h1 {
     text-align: center;
-    font-size: 4vw;
-    padding-top: 4vw;
+    font-size: 2vw;
+    padding-top: 6vw;
 }
 
 footer hr {
@@ -188,13 +192,33 @@ footer hr {
     font-size: small;
 }
 
-.footer-container {
+.footer-info {
     display: grid;
     grid-template-columns: repeat(6, auto);
     justify-content: center;
     grid-column-gap: 5.208vw;
 }
 
+.footer-socials {
+    padding-top: 2vw;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+
+}
+
+.social-icons a {
+    text-decoration: none;
+    background-color: skyblue;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    color: black;
+    font-weight: 700;
+    font-size: 2vw;
+    border-radius: 0.56vw;
+}
 
 /* -----------------------------------
     Media Query for mobile devices 
