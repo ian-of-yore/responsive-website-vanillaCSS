@@ -1,0 +1,184 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    max-width: 100%;
+}
+
+/* -------------------------------
+CSS Styles for the Header Section 
+-----------------------------------*/
+
+.top-container {
+    display: flex;
+    background-color: black;
+    width: 1050px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-left: 7.5%;
+    padding-top: 20px;
+    padding-bottom: 60px;
+
+}
+
+.header-half {
+    width: 50%;
+}
+
+.header-text {
+    padding-left: 50px;
+
+}
+
+.header-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+.header-text p {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.header-text a {
+    text-decoration: none;
+    width: 50px;
+    height: 40px;
+    background-color: red;
+    padding: 5px 20px;
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+.header-img {
+    padding-left: 50px;
+    padding-top: 50px;
+    width: auto;
+}
+
+
+/* ------------------------------------------
+    Second Section Style of the Linked-Page 
+    -----------------------------------------*/
+
+.second-section {
+    display: grid;
+    grid-template-columns: 270px auto;
+    width: 1050px;
+    margin-left: 7.5%;
+}
+
+
+.aside {
+    width: 250px;
+    height: 150px;
+    background-color: black;
+    border-radius: 5px;
+    padding-top: 40px;
+    /* margin-left: 20px; */
+    /* padding-left: 10%;
+        padding-top: 2%;
+        padding-bottom: 10px; */
+
+}
+
+.upcoming-matches,
+.ucl {
+    text-align: center;
+    background-color: white;
+    color: black;
+    width: 180px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 32px;
+}
+
+.team-updates-button {
+    text-decoration: none;
+    color: black;
+}
+
+.el-classico {
+    text-align: center;
+    background-color: rgb(213, 49, 49);
+    color: black;
+    width: 180px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 32px;
+}
+
+
+/* ---------------------
+    UCL Matches Styles 
+    --------------------*/
+
+.ucl-matches {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.recent-matches img {
+    width: 93px;
+    height: 56px;
+}
+
+.liv-vs-rma {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.recent-matches {
+    box-shadow: 4px 4px 4px rgb(131, 125, 125);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 250px;
+    padding-top: 10px;
+}
+
+.recent-matches h4,
+p {
+    text-align: center;
+}
+
+
+
+
+
+
+/* ------------------
+    Footer Styles 
+    -----------------*/
+footer {
+    background-color: black;
+    color: white;
+    height: 250px;
+}
+
+footer h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+footer hr {
+    width: 80%;
+}
+
+.footer-contents {
+    font-size: small;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: center;
+    grid-column-gap: 30px;
+}
