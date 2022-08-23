@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    margin-top: 40px;
+    margin-top: 4vw;
     max-width: 100%;
 }
 
@@ -11,14 +11,11 @@ CSS Styles for the Header Section
 .top-container {
     display: flex;
     background-color: black;
-    width: 1050px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    margin-left: 7.5%;
-    padding-top: 20px;
-    padding-bottom: 60px;
-    /* padding-left: 50px; */
-
+    width: 90%;
+    border-radius: 2.6vw;
+    margin: auto;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
 }
 
 .header-half {
@@ -26,44 +23,39 @@ CSS Styles for the Header Section
 }
 
 .header-text {
-    padding-left: 50px;
+    padding-left: 5vw;
 
 }
 
 .header-text h1 {
-    font-size: 40px;
+    font-size: 3vw;
     font-weight: 700;
     color: white;
 }
 
 .header-text p {
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: 700;
     color: white;
-    padding-bottom: 20px;
+    padding-bottom: 2vw;
 }
 
 .header-text a {
     text-decoration: none;
-    width: 50px;
-    height: 40px;
     background-color: red;
-    padding: 5px 20px;
+    padding: 0.87vw .8vw;
     color: white;
     font-weight: 700;
-    font-size: larger;
-    border-radius: 5px;
+    font-size: .8vw;
+    border-radius: 0.86vw;
 }
 
 .header-img {
-    padding-left: 50px;
-    padding-top: 50px;
+    padding-left: 4vw;
+    padding-top: 2vw;
+    padding-right: 4vw;
+    height: 100%;
     width: auto;
-}
-
-#forward-font {
-    width: 20px;
-    height: 20px;
 }
 
 /* -------------------------------------
@@ -72,23 +64,21 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 270px auto;
-    width: 1050px;
-    margin-left: 7.5%;
+    grid-template-columns: 46.875vw auto;
+    width: 90%;
+    margin-top: 5vw;
+    margin-left: 4vw;
+    margin-bottom: 5vw;
+    margin-right: 4vw;
 }
 
 
 .aside {
-    width: 250px;
-    height: 150px;
+    width: 43.40vw;
+    height: 26.041vw;
     background-color: black;
-    border-radius: 5px;
-    padding-top: 40px;
-    /* margin-left: 20px; */
-    /* padding-left: 10%;
-    padding-top: 2%;
-    padding-bottom: 10px; */
-
+    border-radius: 0.87vw;
+    padding-top: 6.94vw;
 }
 
 .upcoming-matches,
@@ -96,10 +86,10 @@ CSS Styles for the Header Section
     text-align: center;
     background-color: white;
     color: black;
-    width: 180px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: 32px;
+    width: 31.25vw;
+    border-radius: 0.87vw;
+    margin-bottom: 3.47vw;
+    margin-left: 5.56vw;
 }
 
 .ucl-button {
@@ -111,10 +101,10 @@ CSS Styles for the Header Section
     text-align: center;
     background-color: rgb(213, 49, 49);
     color: black;
-    width: 180px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: 32px;
+    width: 31.25vw;
+    border-radius: 0.87vw;
+    margin-bottom: 3.47vw;
+    margin-left: 5.56vw;
 }
 
 /* --------------------
@@ -124,32 +114,32 @@ CSS Styles for the Header Section
 
 
 .news .carvahal img {
-    width: 250px;
-    height: 175px;
+    width: 43.40vw;
+    height: 30.38vw;
 }
 
 .news {
-    box-shadow: 4px 4px 4px rgb(131, 125, 125);
-    border: 2px solid black;
-    border-radius: 5px;
+    box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
+    border: 0.347vw solid black;
+    border-radius: 0.87vw;
 }
 
 .news-text {
-    padding-bottom: 10px;
-    padding-left: 10px;
+    padding-bottom: 1.74vw;
+    padding-left: 1.74vw;
 }
 
 .news-type {
     border: 1px solid grey;
     font-size: small;
-    width: 120px;
-    padding-left: 10px;
-    border-radius: 5px;
+    width: 20.83vw;
+    padding-left: 1.736vw;
+    border-radius: 0.86vw;
 }
 
 .news-info {
     display: grid;
-    grid-template-columns: repeat(2, 90px);
+    grid-template-columns: repeat(2, 15.625vw);
 }
 
 .fa-clock.clock {
@@ -159,16 +149,16 @@ CSS Styles for the Header Section
 }
 
 .fa-comment-dots {
-    width: 20px;
-    height: 20px;
+    width: 3.47vw;
+    height: 3.47vw;
     opacity: 0.25;
 }
 
 .marca-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-column-gap: 1.73vw;
+    grid-row-gap: 1.73vw;
 }
 
 /* ------------------
@@ -177,13 +167,13 @@ CSS Styles for the Header Section
 footer {
     background-color: black;
     color: white;
-    height: 250px;
+    height: 43.40vw;
 }
 
 footer h1 {
     text-align: center;
-    font-size: 40px;
-    padding-top: 50px;
+    font-size: 6.94vw;
+    padding-top: 8.68vw;
 }
 
 footer hr {
@@ -198,5 +188,49 @@ footer hr {
     display: grid;
     grid-template-columns: repeat(6, auto);
     justify-content: center;
-    grid-column-gap: 30px;
+    grid-column-gap: 5.208vw;
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 576px) {
+
+    .top-container {
+        flex-direction: column;
+        width: 95vw;
+        border-radius: 2.6vw;
+        margin-bottom: 6.95vw;
+        margin-left: 7.5%;
+        padding-top: 3.47vw;
+        padding-bottom: 10.41vw;
+    }
+
+    .header-half {
+        width: 100%;
+    }
+
+    .header-text {
+        padding-left: 8.68vw;
+
+    }
+
+    .header-text h1 {
+        font-size: 6.94vw;
+    }
+
+    .header-text p {
+        font-size: 2.60vw;
+        padding-bottom: 3.47vw;
+    }
+
+    .header-text a {
+        width: 8.68vw;
+        height: 6.94vw;
+        padding: 0.86vw 3.47vw;
+        border-radius: 0.87vw;
+    }
+
+    .header-img {
+        padding-left: 8.64vw;
+        padding-top: 8.64vw;
+    }
 }
