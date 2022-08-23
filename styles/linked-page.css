@@ -17,7 +17,6 @@ CSS Styles for the Header Section
     margin: auto;
     padding-top: 2vw;
     padding-bottom: 4vw;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -38,6 +37,7 @@ CSS Styles for the Header Section
     font-weight: 700;
     color: white;
     padding-bottom: 2vw;
+    text-align: left;
 }
 
 .header-text a {
@@ -68,23 +68,18 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 270px auto;
-    width: 1050px;
-    margin-left: 7.5%;
+    grid-template-columns: 350px auto;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
 }
 
-
 .aside {
-    width: 250px;
-    height: 150px;
+    width: 20vw;
+    height: 15vw;
     background-color: black;
-    border-radius: 5px;
-    padding-top: 40px;
-    /* margin-left: 20px; */
-    /* padding-left: 10%;
-        padding-top: 2%;
-        padding-bottom: 10px; */
-
+    border-radius: 0.87vw;
+    padding-top: 5vw;
+    padding-right: 1vw;
 }
 
 .upcoming-matches,
@@ -92,10 +87,12 @@ CSS Styles for the Header Section
     text-align: center;
     background-color: white;
     color: black;
-    width: 180px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: 32px;
+    width: 15vw;
+    padding: .5vw;
+    border-radius: 0.87vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1.5vw;
+    padding-left: 2.5vw;
 }
 
 .team-updates-button {
@@ -105,48 +102,71 @@ CSS Styles for the Header Section
 
 .el-classico {
     text-align: center;
+    padding: .5vw;
     background-color: rgb(213, 49, 49);
     color: black;
-    width: 180px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    margin-left: 32px;
+    width: 15vw;
+    border-radius: 0.87vw;
+    margin-bottom: 1.5vw;
+    margin-left: 1.5vw;
+    padding-left: 2.5vw;
 }
 
 
 /* ---------------------
     UCL Matches Styles 
     --------------------*/
-
 .ucl-matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-}
-
-.recent-matches img {
-    width: 93px;
-    height: 56px;
-}
-
-.liv-vs-rma {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 1.73vw;
+    grid-column-gap: 2.5vw;
 }
 
 .recent-matches {
-    box-shadow: 4px 4px 4px rgb(131, 125, 125);
-    border: 2px solid black;
-    border-radius: 5px;
-    width: 250px;
-    padding-top: 10px;
+    box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
+    border: 0.347vw solid black;
+    border-radius: 0.87vw;
+    padding: 0.5vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.5fr 0.5fr;
+    height: 20vw;
+}
+
+.recent-matches img {
+    width: 100%;
 }
 
 .recent-matches h4,
 p {
     text-align: center;
 }
+
+.rma-vs-team {
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr;
+}
+
+.vs {
+    display: flex;
+    align-items: center;
+    padding-right: 1vw;
+}
+
+.team-logo {
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -199,4 +219,137 @@ footer hr {
     font-weight: 700;
     font-size: 2vw;
     border-radius: 0.56vw;
+}
+
+
+
+/* -----------------------------------
+    Media Query for mobile devices 
+    --------------------------------*/
+@media only screen and (max-width: 576px) {
+
+    .top-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .header-text {
+        padding-right: 5vw;
+    }
+
+    .header-text h1 {
+        text-align: center;
+        font-size: 7vw;
+        font-weight: 700;
+        color: white;
+        padding-right: 0.5vw;
+    }
+
+    .header-text p {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 700;
+        color: white;
+        padding-bottom: 2vw;
+    }
+
+    #btn-header {
+        display: flex;
+        width: 25%;
+        margin: auto;
+    }
+
+    .header-text a {
+        text-align: center;
+        text-decoration: none;
+        background-color: red;
+        padding: 2vw 2vw;
+        color: white;
+        font-weight: 700;
+        font-size: 2vw;
+        border-radius: 2vw;
+    }
+
+    .header-img {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Responsiveness for Mobile Devices of the Second Section */
+    .second-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 300vw;
+        grid-row-gap: 28vw;
+        margin-bottom: 250vw;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        background-color: white;
+    }
+
+    .upcoming-matches,
+    .el-classico {
+        font-weight: 700;
+        font-size: 4vw;
+        text-align: center;
+        background-color: white;
+        color: black;
+        width: 60vw;
+        padding-top: 2.5vw;
+        padding-bottom: 1.5vw;
+        border: 0.347vw solid black;
+    }
+
+    .ucl-button {
+        text-decoration: none;
+        color: black;
+    }
+
+    .ucl {
+        text-align: center;
+        background-color: rgb(213, 49, 49);
+        color: black;
+        width: 60vw;
+        font-size: 4vw;
+        font-weight: 700;
+        padding-top: 2.5vw;
+        padding-bottom: 1.5vw;
+        border: 0.347vw solid black;
+    }
+
+
+
+    /* Responsiveness for Mobile Devices of the Footer Section */
+    footer {
+        height: 90vw;
+        background-color: rgb(38, 37, 37);
+        padding-bottom: 3vw;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+    }
+
+    footer h1 {
+        text-align: center;
+        font-size: 3.5vw;
+
+    }
+
+    .footer-contents {
+        color: white;
+        font-size: 3vw;
+    }
+
+    .footer-socials {
+        display: flex;
+        justify-content: space-around;
+    }
 }
