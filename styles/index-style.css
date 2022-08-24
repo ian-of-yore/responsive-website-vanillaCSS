@@ -37,6 +37,17 @@ CSS Styles for the Header Section
     font-weight: 700;
     color: white;
     padding-bottom: 2vw;
+    width: 30vw;
+}
+
+.header-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-overflow:hover {
+    overflow: visible;
 }
 
 .header-text a {
@@ -73,36 +84,37 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 25vw auto;
+    grid-template-columns: 250px 1fr;
+    grid-column-gap: 20px;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
 
 
 .aside {
-    width: 20vw;
-    height: 40vh;
+    width: 230px;
+    height: 250px;
     background-color: black;
-    border-radius: 0.87vw;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 1.5vw;
-    padding-top: 1vw;
+    padding-right: 5px;
 }
+
 
 .upcoming-matches,
 .el-classico {
     text-align: center;
     background-color: white;
     color: black;
-    width: 15vw;
-    padding: .5vw;
-    border-radius: 0.87vw;
-    margin-bottom: 1.5vw;
-    margin-left: 1.5vw;
-    padding-left: 2.5vw;
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 .ucl-button {
@@ -112,19 +124,24 @@ CSS Styles for the Header Section
 
 .ucl {
     text-align: center;
-    padding: .5vw;
     background-color: rgb(213, 49, 49);
     color: black;
-    width: 15vw;
-    border-radius: 0.87vw;
-    margin-bottom: 1.5vw;
-    margin-left: 1.5vw;
-    padding-left: 2.5vw;
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 /* --------------------
     Marca-News Styles 
 -----------------------*/
+.marca-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.73vw;
+    grid-row-gap: 1.73vw;
+}
 
 .news {
     display: flex;
@@ -178,12 +195,7 @@ CSS Styles for the Header Section
     opacity: 0.75;
 }
 
-.marca-news {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1.73vw;
-    grid-row-gap: 1.73vw;
-}
+
 
 #view-all {
     display: none;
@@ -420,9 +432,10 @@ footer hr {
     Media Query for tablet devices 
     --------------------------------*/
 @media only screen and (min-width:576px) and (max-width:768px) {
-    
+
 
     .second-section {
+        margin-top: 5vh;
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 1.9fr;
         grid-row-gap: 5vh;
@@ -441,6 +454,7 @@ footer hr {
 
     .upcoming-matches,
     .el-classico {
+        margin-top: 1vh;
         font-weight: 700;
         font-size: 2vw;
         text-align: center;
@@ -448,8 +462,8 @@ footer hr {
         color: black;
         width: 22vw;
         border: 0.347vw solid black;
-        padding-top: 1.5vw;
-        height: 5vh;
+        padding-top: 2vw;
+        height: 6vh;
     }
 
     .ucl-button {
@@ -466,7 +480,7 @@ footer hr {
         font-size: 2vw;
         border: 0.347vw solid black;
         padding-top: 1.5vw;
-        height: 5vh;
+        height: 6vh;
     }
 
     .marca-news {

@@ -37,7 +37,17 @@ CSS Styles for the Header Section
     font-weight: 700;
     color: white;
     padding-bottom: 2vw;
-    text-align: left;
+    width: 30vw;
+}
+
+.header-overflow {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.header-overflow:hover {
+    overflow: visible;
 }
 
 .header-text a {
@@ -75,35 +85,36 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 25vw auto;
+    grid-template-columns: 250px 1fr;
+    grid-column-gap: 20px;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
 
 .aside {
-    width: 20vw;
-    height: 40vh;
+    width: 230px;
+    height: 250px;
     background-color: black;
-    border-radius: 0.87vw;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 1.5vw;
-    padding-top: 1vw;
+    padding-right: 5px;
 }
+
 
 .upcoming-matches,
 .ucl {
     text-align: center;
     background-color: white;
     color: black;
-    width: 15vw;
-    padding: .5vw;
-    border-radius: 0.87vw;
-    margin-bottom: 1.5vw;
-    margin-left: 1.5vw;
-    padding-left: 2.5vw;
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 .team-updates-button {
@@ -113,14 +124,13 @@ CSS Styles for the Header Section
 
 .el-classico {
     text-align: center;
-    padding: .5vw;
     background-color: rgb(213, 49, 49);
     color: black;
-    width: 15vw;
-    border-radius: 0.87vw;
-    margin-bottom: 1.5vw;
-    margin-left: 1.5vw;
-    padding-left: 2.5vw;
+    width: 180px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 10px;
 }
 
 
@@ -403,11 +413,12 @@ footer hr {
         background-color: white;
         width: 90%;
         margin: auto;
-        height: 1vh;
+        height: 2vh;
     }
 
     .upcoming-matches,
     .ucl {
+        margin-top: 1vh;
         font-weight: 700;
         font-size: 2vw;
         text-align: center;
@@ -416,7 +427,7 @@ footer hr {
         width: 22vw;
         border: 0.347vw solid black;
         padding-bottom: 0.8vw;
-        height: 3vw;
+        height: 6vw;
     }
 
     .ucl-button {
@@ -433,7 +444,7 @@ footer hr {
         font-size: 2vw;
         border: 0.347vw solid black;
         padding-bottom: 0.8vw;
-        height: 3vw;
+        height: 6vw;
     }
 
     .ucl-matches {
