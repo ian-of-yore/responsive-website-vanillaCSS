@@ -58,7 +58,14 @@ CSS Styles for the Header Section
 
 .header-img img {
     width: 100%;
+}
 
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.2);
 }
 
 
@@ -270,6 +277,8 @@ footer hr {
     .header-img {
         display: flex;
         align-items: center;
+        width: 80%;
+        margin: auto;
     }
 
     /* Responsiveness for Mobile Devices of the Second Section */

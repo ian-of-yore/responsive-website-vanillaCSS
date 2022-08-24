@@ -57,7 +57,14 @@ CSS Styles for the Header Section
 
 .header-img img {
     width: 100%;
+}
 
+.zoom {
+    transition: transform .2s;
+}
+
+.zoom:hover {
+    transform: scale(1.212);
 }
 
 /* -------------------------------------
@@ -283,6 +290,16 @@ footer hr {
     .header-img {
         display: flex;
         align-items: center;
+        width: 80%;
+        margin: auto;
+    }
+
+    .zoom {
+        transition: transform .2s;
+    }
+
+    .zoom:hover {
+        transform: scale(1.2);
     }
 
     /* Responsiveness for Mobile Devices of the Second Section */
@@ -403,6 +420,8 @@ footer hr {
     Media Query for tablet devices 
     --------------------------------*/
 @media only screen and (min-width:576px) and (max-width:768px) {
+    
+
     .second-section {
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 1.9fr;
