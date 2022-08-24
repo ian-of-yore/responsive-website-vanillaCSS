@@ -17,7 +17,6 @@ CSS Styles for the Header Section
     margin: auto;
     padding-top: 2vw;
     padding-bottom: 4vw;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -223,10 +222,11 @@ footer hr {
     border-radius: 0.56vw;
 }
 
+
 /* -----------------------------------
     Media Query for mobile devices 
     --------------------------------*/
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width:320px) and (max-width:575px) {
 
     .top-container {
         grid-template-columns: 1fr;
@@ -383,4 +383,107 @@ footer hr {
         display: flex;
         justify-content: space-around;
     }
+}
+
+/* -----------------------------------
+    Media Query for tablet devices 
+    --------------------------------*/
+@media only screen and (min-width:576px) and (max-width:767px) {
+    .second-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1.9fr;
+        grid-row-gap: 10vw;
+        margin-bottom: 1vw
+    }
+
+    .aside {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        width: 90%;
+        margin: auto;
+        height: 1vw;
+    }
+
+    .upcoming-matches,
+    .el-classico {
+        font-weight: 700;
+        font-size: 2vw;
+        text-align: center;
+        background-color: white;
+        color: black;
+        width: 22vw;
+        border: 0.347vw solid black;
+        padding-bottom: 0.8vw;
+        height: 3vw;
+    }
+
+    .ucl-button {
+        text-decoration: none;
+        color: black;
+    }
+
+    .ucl {
+        text-align: center;
+        font-weight: 700;
+        background-color: rgb(213, 49, 49);
+        color: black;
+        width: 22vw;
+        font-size: 2vw;
+        border: 0.347vw solid black;
+        padding-bottom: 0.8vw;
+        height: 3vw;
+    }
+
+    .marca-news {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 5vw;
+    }
+
+    .news {
+        box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
+        border: 0.347vw solid black;
+        border-radius: 0.87vw;
+        height: 50vw;
+    }
+
+    .news-text {
+        padding-left: 3vw;
+        padding-right: 1vw;
+        font-size: 2vw;
+    }
+
+    .news-comments {
+        padding-right: 3vw;
+    }
+
+    #view-all {
+        background-color: red;
+        font-size: 3vw;
+        font-weight: 700;
+        color: white;
+        width: 15%;
+        margin: auto;
+        padding: 2vw;
+        border-radius: 10px;
+        margin-bottom: 5vw;
+    }
+
+    footer {
+        height: 35vw;
+    }
+
+    .footer-info {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .footer-socials {
+        padding-left: 25vw;
+        padding-right: 25vw;
+    }
+
 }
