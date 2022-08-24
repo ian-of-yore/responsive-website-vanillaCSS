@@ -66,7 +66,7 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns: 25vw auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
@@ -74,11 +74,15 @@ CSS Styles for the Header Section
 
 .aside {
     width: 20vw;
-    height: 15vw;
+    height: 40vh;
     background-color: black;
     border-radius: 0.87vw;
-    padding-top: 5vw;
-    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.5vw;
+    padding-top: 1vw;
 }
 
 .upcoming-matches,
@@ -129,7 +133,7 @@ CSS Styles for the Header Section
     box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
     border: 0.347vw solid black;
     border-radius: 0.87vw;
-    height: 25vw;
+    padding-bottom: 1vw;
 }
 
 .news-text {
@@ -157,13 +161,13 @@ CSS Styles for the Header Section
 
 .fa-clock.clock {
     width: 1vw;
-    height: 1vw;
+    height: 1vh;
     opacity: 0.75;
 }
 
 .fa-comment-dots {
     width: 1.5vw;
-    height: 1.5vw;
+    height: 1.5vh;
     opacity: 0.75;
 }
 
@@ -184,7 +188,7 @@ CSS Styles for the Header Section
 footer {
     background-color: black;
     color: white;
-    height: 25vw;
+    height: 50vh;
 }
 
 footer h1 {
@@ -232,7 +236,7 @@ footer hr {
 /* -----------------------------------
     Media Query for mobile devices 
     --------------------------------*/
-@media only screen and (min-width:320px) and (max-width:575px) {
+@media only screen and (min-width:320px) and (max-width:576px) {
 
     .top-container {
         grid-template-columns: 1fr;
@@ -337,7 +341,7 @@ footer hr {
         box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
         border: 0.347vw solid black;
         border-radius: 0.87vw;
-        height: 85vw;
+        padding-bottom: 1vw;
     }
 
     .news-text {
@@ -366,7 +370,7 @@ footer hr {
 
     /* Responsiveness for Mobile Devices of the Footer Section */
     footer {
-        height: 90vw;
+        height: 75vh;
         background-color: rgb(38, 37, 37);
         padding-bottom: 3vw;
     }
@@ -398,7 +402,7 @@ footer hr {
 /* -----------------------------------
     Media Query for tablet devices 
     --------------------------------*/
-@media only screen and (min-width:576px) and (max-width:767px) {
+@media only screen and (min-width:576px) and (max-width:768px) {
     .second-section {
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 1.9fr;
@@ -408,11 +412,12 @@ footer hr {
 
     .aside {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         background-color: white;
         width: 90%;
         margin: auto;
-        height: 1vw;
+        height: 1vh;
     }
 
     .upcoming-matches,
@@ -424,8 +429,8 @@ footer hr {
         color: black;
         width: 22vw;
         border: 0.347vw solid black;
-        padding-bottom: 0.8vw;
-        height: 3vw;
+        padding-top: 1.5vw;
+        height: 5vh;
     }
 
     .ucl-button {
@@ -441,8 +446,8 @@ footer hr {
         width: 22vw;
         font-size: 2vw;
         border: 0.347vw solid black;
-        padding-bottom: 0.8vw;
-        height: 3vw;
+        padding-top: 1.5vw;
+        height: 5vh;
     }
 
     .marca-news {
@@ -455,7 +460,7 @@ footer hr {
         box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
         border: 0.347vw solid black;
         border-radius: 0.87vw;
-        height: 50vw;
+        padding-bottom: 1vw;
     }
 
     .news-text {
@@ -482,7 +487,7 @@ footer hr {
     }
 
     footer {
-        height: 35vw;
+        height: 40vh;
     }
 
     .footer-info {
