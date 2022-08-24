@@ -162,18 +162,6 @@ p {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------
     Footer Styles 
     -----------------*/
@@ -207,7 +195,9 @@ footer hr {
 .footer-socials {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 1vw;
+    width: 30%;
+    margin: auto;
+    padding-top: 2vw;
 
 }
 
@@ -218,7 +208,7 @@ footer hr {
     padding-right: 1vw;
     color: black;
     font-weight: 700;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius: 0.56vw;
 }
 
