@@ -7,9 +7,9 @@ body {
     margin-right: 5vw;
 }
 
-/* -------------------------------
-CSS Styles for the Header Section 
------------------------------------*/
+/* --------------------------------------------
+CSS Styles for the Header Section: Big Display
+----------------------------------------------*/
 
 .top-container {
     background-color: black;
@@ -37,17 +37,6 @@ CSS Styles for the Header Section
     font-weight: 700;
     color: white;
     padding-bottom: 2vw;
-    width: 30vw;
-}
-
-.header-overflow {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.header-overflow:hover {
-    overflow: visible;
 }
 
 .header-text a {
@@ -78,9 +67,9 @@ CSS Styles for the Header Section
     transform: scale(1.212);
 }
 
-/* -------------------------------------
-    CSS Styles for the Second Section 
-   ------------------------------------*/
+/* -------------------------------------------------
+    CSS Styles for the Second Section: Big Display
+   -----------------------------------------------*/
 
 .second-section {
     display: grid;
@@ -133,9 +122,9 @@ CSS Styles for the Header Section
     margin-right: 10px;
 }
 
-/* --------------------
-    Marca-News Styles 
------------------------*/
+/* ---------------------------------
+    Marca-News Styles: Big Display 
+----------------------------------*/
 .marca-news {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -201,9 +190,9 @@ CSS Styles for the Header Section
     display: none;
 }
 
-/* ------------------
-    Footer Styles 
-    -----------------*/
+/* -----------------------------------
+    Footer Styles: Large Device 
+    --------------------------------*/
 footer {
     background-color: black;
     color: white;
@@ -257,6 +246,9 @@ footer hr {
     --------------------------------*/
 @media only screen and (min-width:320px) and (max-width:576px) {
 
+    /* -------------------
+    Header: Small Screen
+    --------------------- */
     .top-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -314,7 +306,9 @@ footer hr {
         transform: scale(1.2);
     }
 
-    /* Responsiveness for Mobile Devices of the Second Section */
+    /* ----------------------------------------------------
+    Responsiveness for Mobile Devices of the Second Section
+    --------------------------------------------------------- */
     .second-section {
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 300vw;
@@ -397,7 +391,9 @@ footer hr {
         display: none;
     }
 
-    /* Responsiveness for Mobile Devices of the Footer Section */
+    /* -----------------------------------------------------
+    Responsiveness for Mobile Devices of the Footer Section 
+    -------------------------------------------------------*/
     footer {
         height: 75vh;
         background-color: rgb(38, 37, 37);
@@ -433,7 +429,9 @@ footer hr {
     --------------------------------*/
 @media only screen and (min-width:576px) and (max-width:768px) {
 
-
+    /*------------------------------------
+        Second Section: Tablet Devices
+    ---------------------------------- */
     .second-section {
         margin-top: 5vh;
         grid-template-columns: 1fr;
@@ -519,6 +517,9 @@ footer hr {
         margin-bottom: 5vw;
     }
 
+    /* --------------------------------
+        Footer Section: Tablet Devices
+     -------------------------------------*/
     footer {
         height: 40vh;
     }

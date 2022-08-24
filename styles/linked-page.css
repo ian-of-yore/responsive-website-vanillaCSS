@@ -7,9 +7,9 @@ body {
     margin-right: 5vw;
 }
 
-/* -------------------------------
-CSS Styles for the Header Section 
------------------------------------*/
+/* ---------------------------------------------
+CSS Styles for the Header Section: Large Screen
+-------------------------------------------------*/
 
 .top-container {
     background-color: black;
@@ -37,17 +37,7 @@ CSS Styles for the Header Section
     font-weight: 700;
     color: white;
     padding-bottom: 2vw;
-    width: 30vw;
-}
-
-.header-overflow {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.header-overflow:hover {
-    overflow: visible;
+    text-align: left;
 }
 
 .header-text a {
@@ -79,9 +69,9 @@ CSS Styles for the Header Section
 }
 
 
-/* ------------------------------------------
-    Second Section Style of the Linked-Page 
-    -----------------------------------------*/
+/* -----------------------------------------------------------
+    Second Section Style of the Linked-Page: Large Screen 
+    ----------------------------------------------------------*/
 
 .second-section {
     display: grid;
@@ -134,9 +124,9 @@ CSS Styles for the Header Section
 }
 
 
-/* ---------------------
-    UCL Matches Styles 
-    --------------------*/
+/* -----------------------------------
+    UCL Matches Styles: Large Screen 
+    -----------------------------------*/
 .ucl-matches {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -169,7 +159,6 @@ p {
     grid-template-columns: 1fr .2fr 1fr;
 }
 
-
 .vs {
     display: flex;
     align-items: center;
@@ -182,9 +171,9 @@ p {
 }
 
 
-/* ------------------
-    Footer Styles 
-    -----------------*/
+/* ------------------------------
+    Footer Styles: Large Screen 
+    ----------------------------*/
 footer {
     background-color: black;
     color: white;
@@ -242,6 +231,9 @@ footer hr {
     --------------------------------*/
 @media only screen and (max-width: 576px) {
 
+    /* -------------------------------
+    Header Section: Small Screen
+    ------------------------------ */
     .top-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
@@ -291,7 +283,9 @@ footer hr {
         margin: auto;
     }
 
-    /* Responsiveness for Mobile Devices of the Second Section */
+    /*----------------------------------------------------------
+     Responsiveness for Mobile Devices of the Second Section 
+    -------------------------------------------------------------*/
     .second-section {
         margin-top: 10vh;
         grid-template-columns: 1fr;
@@ -362,7 +356,9 @@ footer hr {
         font-size: 3vw;
     }
 
-    /* Responsiveness for Mobile Devices of the Footer Section */
+    /* -----------------------------------------------------
+    Responsiveness for Mobile Devices of the Footer Section 
+    ----------------------------------------------------------*/
     footer {
         margin-top: 5vw;
         height: 90vh;
@@ -399,6 +395,10 @@ footer hr {
     Media Query for tablet devices 
     --------------------------------*/
 @media only screen and (min-width:576px) and (max-width:767px) {
+
+    /* ---------------------
+    Second Section
+    ---------------------- */
     .second-section {
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 1.9fr;
@@ -465,6 +465,9 @@ footer hr {
         padding-bottom: 2vh;
     }
 
+    /* -------------------------------------
+    Footer Section for the tablet Devices
+    -------------------------------------- */
     footer {
         height: 45vh;
     }
