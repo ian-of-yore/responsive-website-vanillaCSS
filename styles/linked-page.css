@@ -68,18 +68,22 @@ CSS Styles for the Header Section
 
 .second-section {
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns: 25vw auto;
     margin-top: 5vw;
     margin-bottom: 5vw;
 }
 
 .aside {
     width: 20vw;
-    height: 15vw;
+    height: 40vh;
     background-color: black;
     border-radius: 0.87vw;
-    padding-top: 5vw;
-    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.5vw;
+    padding-top: 1vw;
 }
 
 .upcoming-matches,
@@ -127,11 +131,11 @@ CSS Styles for the Header Section
     box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
     border: 0.347vw solid black;
     border-radius: 0.87vw;
-    padding-bottom: 5vw;
+    padding-top: 2vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 15vw;
+    grid-template-rows: 1.7fr 0.3fr;
+
 }
 
 .team-logo img {
@@ -146,9 +150,8 @@ p {
 .rma-vs-team {
     display: grid;
     grid-template-columns: 1fr .2fr 1fr;
-    height: 13vw;
-
 }
+
 
 .vs {
     display: flex;
@@ -271,10 +274,11 @@ footer hr {
 
     /* Responsiveness for Mobile Devices of the Second Section */
     .second-section {
+        margin-top: 10vh;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 300vw;
-        grid-row-gap: 28vw;
-        margin-bottom: 265vw;
+        grid-row-gap: 5vh;
+        margin-bottom: 190vh;
     }
 
     .aside {
@@ -318,14 +322,13 @@ footer hr {
     .ucl-matches {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-        grid-row-gap: 5vw;
+        grid-row-gap: 4vh;
     }
 
     .recent-matches {
         box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
         border: 0.347vw solid black;
         border-radius: 0.87vw;
-        height: 80vw;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1.5fr 0.5fr;
@@ -343,7 +346,7 @@ footer hr {
     /* Responsiveness for Mobile Devices of the Footer Section */
     footer {
         margin-top: 5vw;
-        height: 90vw;
+        height: 90vh;
         background-color: rgb(38, 37, 37);
         padding-bottom: 3vw;
     }
@@ -380,17 +383,18 @@ footer hr {
     .second-section {
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 1.9fr;
-        grid-row-gap: 10vw;
+        grid-row-gap: 5vh;
         margin-bottom: 1vw
     }
 
     .aside {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
         background-color: white;
         width: 90%;
         margin: auto;
-        height: 1vw;
+        height: 1vh;
     }
 
     .upcoming-matches,
@@ -433,24 +437,16 @@ footer hr {
         box-shadow: 0.694vw 0.694vw 0.694vw rgb(131, 125, 125);
         border: 0.347vw solid black;
         border-radius: 0.87vw;
-        height: 45vw;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1.5fr 0.5fr;
         padding-right: 3vw;
         padding-top: 3vw;
-    }
-
-    .match-text {
-        height: 12vw;
-    }
-
-    .rma-vs-team {
-        height: 30vw;
+        padding-bottom: 2vh;
     }
 
     footer {
-        height: 35vw;
+        height: 45vh;
     }
 
     .footer-info {
